@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
-  resources :static_pages
-  resources :controllers
+  resources :fallusers
+  get 'welcome' => 'fallusers#welcome'
+
+
+  root             'static_pages#home'
+  get 'faqs'    => 'static_pages#faqs'
+  get 'help'    => 'static_pages#help'
+  get 'contact'   => 'static_pages#contact'
+  get 'signup' => 'static_pages#signup'
+  get 'rates' => 'static_pages#rates'
+  get 'schedules' => 'static_pages#schedules'
+  get 'servicestops' => 'static_pages#servicestops'
+  get 'hold' => 'static_pages#hold'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

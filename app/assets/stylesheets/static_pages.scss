@@ -1,3 +1,66 @@
-// Place all the styles related to the static_pages controller here.
+// Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+table.ratestable td{padding:4px; width:600px;}
+table.ratestable td.right{padding-left:15px;}
+
+table.sched td{padding:10px; text-align:justify;}
+
+div.stops div{float:right;clear:right;}
+
+div.faqs p{width:700px;}
+div.faqs hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+
+body
+{
+background: #FFFAF0; 
+}
+
+.jumbotron{
+    background-color:rgba(255, 250, 240, .5);
+    width:1100px;
+    height:400px;
+ }
+ .jumbotron h2{
+    color: #000000;
+}
+.jumbotron h1{
+    color: #000000;
+}
+
+ .noborder{
+ 	background-color:#FFFAF0;
+ 	font-size: 9px;
+ }
+
+ .thinwell{
+ 	width: 600px;
+ 	margin-left: auto;
+    margin-right: auto;
+    border-style:ridge;
+    border-width:3px;
+    padding:10px;
+ }
+
+
+ .imgcontainer {
+    background-image:url(dukearch.jpg);
+    background-position:center;
+    width:1090px;
+    height:390px;
+}
+
+label{
+  width: 10em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block
+}

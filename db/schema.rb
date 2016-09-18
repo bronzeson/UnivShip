@@ -11,12 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160617223046) do
+ActiveRecord::Schema.define(version: 20160630184420) do
 
   create_table "controllers", force: :cascade do |t|
     t.string   "static_pages"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+  end
+
+  create_table "fallusers", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "dukeaddress"
+    t.string   "homephone"
+    t.string   "cellphone"
+    t.string   "email"
+    t.string   "falldropofftime"
+    t.string   "stop"
+    t.string   "referrername"
+    t.string   "numberofitems"
+    t.string   "itemdescription"
+    t.string   "homestreet"
+    t.string   "homecity"
+    t.string   "homestate"
+    t.string   "homezip"
+    t.string   "parentsname"
+    t.string   "feedback"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "hearabout"
   end
 
   create_table "static_pages", force: :cascade do |t|
